@@ -1,1 +1,88 @@
-/.env
+# -----------------------------
+# Python build/cache files
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+.venv/
+env/
+venv/
+ENV/
+*.envrc
+
+# -----------------------------
+# Environment & secrets
+# -----------------------------
+.env
+*.env.local
+*.secrets
+credentials.json
+
+# -----------------------------
+# FAISS & vector store
+# -----------------------------
+*.faiss
+*.pkl
+*.npy
+*.npz
+vectorstore/
+storage/*.db
+index/
+cache/
+
+# -----------------------------
+# Logs & temp files
+# -----------------------------
+*.log
+*.tmp
+*.swp
+*.bak
+
+# -----------------------------
+# Jupyter / IPython
+# -----------------------------
+.ipynb_checkpoints/
+*.ipynb_save
+profile_default/
+
+# -----------------------------
+# OS-specific
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# VS Code / IDE
+# -----------------------------
+.vscode/
+.idea/
+*.iml
+
+# -----------------------------
+# Other project-specific
+# -----------------------------
+# LangChain cache
+.lc_cache/
+# HuggingFace cache
+huggingface/
+.cache/
+# Streamlit cache
+.streamlit/
+
+# -----------------------------
+# Node / React frontend (if you add one)
+# -----------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
