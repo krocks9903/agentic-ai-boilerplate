@@ -33,12 +33,13 @@ pip install langchain-community langchain-openai openai faiss-cpu pypdf docx2txt
 
 `requirements.txt` is a full environment freeze and installs far more than the code uses. The command above installs only what is imported.
 
-Create a `.env` file:
+Copy `.env.example` to `.env` and add your OpenAI key:
 
-```env
-OPENAI_API_KEY=sk-...
-MODEL=gpt-4o-mini
+```bash
+cp .env.example .env   # Windows: copy .env.example .env
 ```
+
+`OPENAI_API_KEY` is required. `MODEL` is optional and defaults to `gpt-4o-mini`.
 
 ## Usage
 
